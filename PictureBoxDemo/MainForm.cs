@@ -13,7 +13,7 @@ namespace PictureBoxDemo
     public partial class MainForm : Form
     {
         private int imageNum = 0;
-        private int nofImages = 4;
+        private int nofImages = 5;
 
         private AppSettings settings = AppSettings.Instance;
 
@@ -42,7 +42,7 @@ namespace PictureBoxDemo
 
         private void LoadImage()
         {
-            if (imageNum > nofImages)
+            if (imageNum >= nofImages)
             {
                 imageNum = 0;
             }
